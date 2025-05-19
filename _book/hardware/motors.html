@@ -1,0 +1,846 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>电机与螺旋桨选择 · FPV 全指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Your Name">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+
+    
+        
+        
+        <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.default.css" />
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vtx.html" />
+    
+    
+    <link rel="prev" href="receiver.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    硬件篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="components.html">
+            
+                <a href="components.html">
+            
+                    
+                    无人机组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="frame.html">
+            
+                <a href="frame.html">
+            
+                    
+                    机架选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="fc.html">
+            
+                <a href="fc.html">
+            
+                    
+                    飞控选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="receiver.html">
+            
+                <a href="receiver.html">
+            
+                    
+                    接收机选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="motors.html">
+            
+                <a href="motors.html">
+            
+                    
+                    电机与螺旋桨选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="vtx.html">
+            
+                <a href="vtx.html">
+            
+                    
+                    图传系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="glasses.html">
+            
+                <a href="glasses.html">
+            
+                    
+                    眼镜选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="rc.html">
+            
+                <a href="rc.html">
+            
+                    
+                    遥控器选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="battery.html">
+            
+                <a href="battery.html">
+            
+                    
+                    电池选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="gps.html">
+            
+                <a href="gps.html">
+            
+                    
+                    GPS选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="welding.html">
+            
+                <a href="welding.html">
+            
+                    
+                    硬件焊接规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../software/">
+            
+                <a href="../software/">
+            
+                    
+                    软件篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../software/betaflight.html">
+            
+                <a href="../software/betaflight.html">
+            
+                    
+                    Betaflight 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../software/elrs.html">
+            
+                <a href="../software/elrs.html">
+            
+                    
+                    ELRS 协议解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../software/crsf.md">
+            
+                <span>
+            
+                    
+                    CRSF 协议解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../software/sbus.html">
+            
+                <a href="../software/sbus.html">
+            
+                    
+                    SBUS 协议解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../techniques/">
+            
+                <a href="../techniques/">
+            
+                    
+                    飞行技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../safety/">
+            
+                <a href="../safety/">
+            
+                    
+                    安全与法规
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >电机与螺旋桨选择</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x65E0;&#x4EBA;&#x673A;&#x52A8;&#x529B;&#x7CFB;&#x7EDF;&#x9009;&#x578B;&#x4E0E;&#x4F18;&#x5316;&#x6307;&#x5357;">&#x65E0;&#x4EBA;&#x673A;&#x52A8;&#x529B;&#x7CFB;&#x7EDF;&#x9009;&#x578B;&#x4E0E;&#x4F18;&#x5316;&#x6307;&#x5357;</h1>
+<h2 id="&#x6838;&#x5FC3;&#x53C2;&#x6570;&#x77E9;&#x9635;&#xFF08;2023-q3&#xFF09;">&#x6838;&#x5FC3;&#x53C2;&#x6570;&#x77E9;&#x9635;&#xFF08;2023 Q3&#xFF09;</h2>
+<h3 id="&#x4E3B;&#x6D41;&#x7535;&#x673A;&#x6027;&#x80FD;&#x5BF9;&#x6BD4;">&#x4E3B;&#x6D41;&#x7535;&#x673A;&#x6027;&#x80FD;&#x5BF9;&#x6BD4;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x578B;&#x53F7;</th>
+<th>&#x5B9A;&#x5B50;&#x5C3A;&#x5BF8;</th>
+<th>KV&#x503C;</th>
+<th>&#x6700;&#x5927;&#x63A8;&#x529B;(g)</th>
+<th>&#x6548;&#x7387;(g/W)</th>
+<th>&#x9002;&#x7528;&#x7535;&#x6C60;</th>
+<th>&#x91CD;&#x91CF;(g)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T-Motor F60 Pro</td>
+<td>2207</td>
+<td>1750</td>
+<td>3200@30V</td>
+<td>5.2</td>
+<td>6S</td>
+<td>34</td>
+</tr>
+<tr>
+<td>iFlight XING-E Pro</td>
+<td>2306</td>
+<td>2450</td>
+<td>2800@22V</td>
+<td>4.8</td>
+<td>4S</td>
+<td>29</td>
+</tr>
+<tr>
+<td>Emax ECO II</td>
+<td>2203</td>
+<td>1900</td>
+<td>1200@16V</td>
+<td>6.1</td>
+<td>3S</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Brotherhobby Avenger</td>
+<td>2507</td>
+<td>1550</td>
+<td>3800@34V</td>
+<td>4.5</td>
+<td>8S</td>
+<td>48</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x87BA;&#x65CB;&#x6868;&#x6027;&#x80FD;&#x6570;&#x636E;&#x5E93;">&#x87BA;&#x65CB;&#x6868;&#x6027;&#x80FD;&#x6570;&#x636E;&#x5E93;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x578B;&#x53F7;</th>
+<th>&#x5C3A;&#x5BF8;</th>
+<th>&#x6750;&#x8D28;</th>
+<th>&#x9759;&#x63A8;&#x529B;(g)</th>
+<th>&#x8F6C;&#x901F;(kRPM)</th>
+<th>&#x6548;&#x7387;(g/W)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HQProp 5x4.3x3</td>
+<td>5&quot;&#x4E09;&#x53F6;</td>
+<td>PC+GF</td>
+<td>1450</td>
+<td>28</td>
+<td>4.2</td>
+</tr>
+<tr>
+<td>Gemfan 6042</td>
+<td>6&quot;&#x53CC;&#x53F6;</td>
+<td>&#x78B3;&#x7EA4;&#x589E;&#x5F3A;</td>
+<td>2200</td>
+<td>18</td>
+<td>5.8</td>
+</tr>
+<tr>
+<td>APC 7x5</td>
+<td>7&quot;&#x6162;&#x98DE;</td>
+<td>&#x5C3C;&#x9F99;&#x73BB;&#x7EA4;</td>
+<td>3200</td>
+<td>12</td>
+<td>7.1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="&#x52A8;&#x529B;&#x7CFB;&#x7EDF;&#x5339;&#x914D;&#x7B97;&#x6CD5;">&#x52A8;&#x529B;&#x7CFB;&#x7EDF;&#x5339;&#x914D;&#x7B97;&#x6CD5;</h2>
+<h3 id="&#x9EC4;&#x91D1;&#x5339;&#x914D;&#x516C;&#x5F0F;">&#x9EC4;&#x91D1;&#x5339;&#x914D;&#x516C;&#x5F0F;</h3>
+<p>$$ P<em>{required} = \frac{(M</em>{total} \times g)}{&#x3B7;<em>{motor} \times &#x3B7;</em>{prop}} \times \sqrt{\frac{2M_{total}}{\rho A}} } $$</p>
+<ul>
+<li>$ M_{total} $: &#x603B;&#x8D28;&#x91CF;(kg)</li>
+<li>$ &#x3B7;_{motor} $: &#x7535;&#x673A;&#x6548;&#x7387;(0.7-0.85)</li>
+<li>$ &#x3B7;_{prop} $: &#x87BA;&#x65CB;&#x6868;&#x6548;&#x7387;(0.6-0.75)</li>
+<li>$ \rho $: &#x7A7A;&#x6C14;&#x5BC6;&#x5EA6;(1.225kg/m&#xB3;)</li>
+<li>$ A $: &#x6868;&#x76D8;&#x9762;&#x79EF;(m&#xB2;)</li>
+</ul>
+<h3 id="&#x52A8;&#x6001;&#x5339;&#x914D;&#x5DE5;&#x5177;">&#x52A8;&#x6001;&#x5339;&#x914D;&#x5DE5;&#x5177;</h3>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">motor_prop_match</span><span class="hljs-params">(kv, voltage, prop_pitch)</span>:</span>
+    rpm = kv * voltage * <span class="hljs-number">0.9</span>  <span class="hljs-comment"># &#x7535;&#x538B;&#x8865;&#x507F;&#x7CFB;&#x6570;</span>
+    thrust = <span class="hljs-number">0.0001</span> * (prop_pitch**<span class="hljs-number">3</span>) * (rpm**<span class="hljs-number">2</span>)
+    <span class="hljs-keyword">return</span> thrust
+
+print(f<span class="hljs-string">&quot;&#x63A8;&#x529B;&#x4F30;&#x7B97;: {motor_prop_match(2450, 16.8, 4.3):.0f}g&quot;</span>)  <span class="hljs-comment"># &#x8F93;&#x51FA;&#xFF1A;2780g</span>
+</code></pre>
+<h2 id="&#x7535;&#x673A;&#x6838;&#x5FC3;&#x6280;&#x672F;&#x89E3;&#x6790;">&#x7535;&#x673A;&#x6838;&#x5FC3;&#x6280;&#x672F;&#x89E3;&#x6790;</h2>
+<h3 id="&#x7535;&#x78C1;&#x8BBE;&#x8BA1;&#x53C2;&#x6570;">&#x7535;&#x78C1;&#x8BBE;&#x8BA1;&#x53C2;&#x6570;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7ADE;&#x901F;&#x7535;&#x673A;</th>
+<th>&#x957F;&#x822A;&#x65F6;&#x7535;&#x673A;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x7ED5;&#x7EC4;&#x65B9;&#x5F0F;</td>
+<td>&#x5355;&#x7EBF;&#x5BC6;&#x7ED5;</td>
+<td>&#x591A;&#x7EBF;&#x5E76;&#x7ED5;</td>
+</tr>
+<tr>
+<td>&#x78C1;&#x94A2;&#x7B49;&#x7EA7;</td>
+<td>N52SH</td>
+<td>N42UH</td>
+</tr>
+<tr>
+<td>&#x69FD;&#x6781;&#x914D;&#x5408;</td>
+<td>12N14P</td>
+<td>9N12P</td>
+</tr>
+<tr>
+<td>&#x6C14;&#x9699;&#x5BBD;&#x5EA6;</td>
+<td>0.3mm</td>
+<td>0.5mm</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x6563;&#x70ED;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;">&#x6563;&#x70ED;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;</h3>
+<div class="mermaid">
+graph TD
+    A[&#x8F6C;&#x5B50;&#x98CE;&#x53F6;] --&gt; B[&#x5F3A;&#x5236;&#x5BF9;&#x6D41;]
+    C[&#x5B9A;&#x5B50;&#x7ED5;&#x7EC4;] --&gt; D[&#x5BFC;&#x70ED;&#x73AF;&#x6C27;]
+    D --&gt; E[&#x5916;&#x58F3;&#x6563;&#x70ED;&#x9CCD;]
+    B --&gt; F[&#x6C14;&#x6D41;&#x8DEF;&#x5F84;&#x4F18;&#x5316;]
+</div>
+
+<h2 id="&#x87BA;&#x65CB;&#x6868;&#x7A7A;&#x6C14;&#x52A8;&#x529B;&#x5B66;">&#x87BA;&#x65CB;&#x6868;&#x7A7A;&#x6C14;&#x52A8;&#x529B;&#x5B66;</h2>
+<h3 id="&#x7FFC;&#x578B;&#x53C2;&#x6570;&#x5BF9;&#x6BD4;">&#x7FFC;&#x578B;&#x53C2;&#x6570;&#x5BF9;&#x6BD4;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x7FFC;&#x578B;</th>
+<th>&#x6700;&#x5927;&#x5347;&#x529B;&#x7CFB;&#x6570;</th>
+<th>&#x5931;&#x901F;&#x653B;&#x89D2;</th>
+<th>&#x963B;&#x529B;&#x7CFB;&#x6570;(Re=100k)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NACA0012</td>
+<td>1.2</td>
+<td>15&#xB0;</td>
+<td>0.015</td>
+</tr>
+<tr>
+<td>Clark-Y</td>
+<td>1.4</td>
+<td>18&#xB0;</td>
+<td>0.023</td>
+</tr>
+<tr>
+<td>&#x4EFF;&#x751F;&#x5F2F;&#x63A0;</td>
+<td>1.35</td>
+<td>22&#xB0;</td>
+<td>0.018</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x6DA1;&#x6D41;&#x63A7;&#x5236;&#x6280;&#x672F;">&#x6DA1;&#x6D41;&#x63A7;&#x5236;&#x6280;&#x672F;</h3>
+<ol>
+<li>&#x524D;&#x7F18;&#x952F;&#x9F7F;&#x8BBE;&#x8BA1;&#xFF08;&#x964D;&#x566A;7dB&#xFF09;</li>
+<li>&#x540E;&#x7F18;&#x5FAE;&#x5B54;&#x5904;&#x7406;&#xFF08;&#x51CF;&#x5C0F;&#x5C3E;&#x8FF9;&#x6E4D;&#x6D41;&#xFF09;</li>
+<li>&#x7FFC;&#x5C16;&#x5C0F;&#x7FFC;&#xFF08;&#x63D0;&#x5347;&#x6548;&#x7387;12%&#xFF09;</li>
+</ol>
+<h2 id="&#x5B89;&#x88C5;&#x8C03;&#x8BD5;&#x89C4;&#x8303;">&#x5B89;&#x88C5;&#x8C03;&#x8BD5;&#x89C4;&#x8303;</h2>
+<h3 id="&#x52A8;&#x529B;&#x7CFB;&#x7EDF;&#x6821;&#x51C6;&#x6D41;&#x7A0B;">&#x52A8;&#x529B;&#x7CFB;&#x7EDF;&#x6821;&#x51C6;&#x6D41;&#x7A0B;</h3>
+<ol>
+<li><strong>&#x200B;&#x52A8;&#x5E73;&#x8861;&#x6821;&#x51C6;&#x200B;</strong>&#xFF1A;</li>
+<li>&#x4F7F;&#x7528;&#x6FC0;&#x5149;&#x52A8;&#x5E73;&#x8861;&#x4EEA;&#xFF08;&#x6B8B;&#x4F59;&#x91CF;&#xFF1C;0.1g&#xB7;mm&#xFF09;</li>
+<li><strong>&#x76F8;&#x4F4D;&#x5339;&#x914D;&#x200B;</strong>&#xFF1A;<pre><code class="lang-c"><span class="hljs-comment">// &#x7535;&#x673A;&#x8F6C;&#x5411;&#x914D;&#x7F6E;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> motor_order[<span class="hljs-number">4</span>] = {CW, CCW, CCW, CW};  <span class="hljs-comment">// &#x6807;&#x51C6;X&#x578B;&#x5E03;&#x5C40;</span>
+</code></pre>
+&#x200B;</li>
+<li><strong>&#x70ED;&#x5FAA;&#x73AF;&#x78E8;&#x5408;&#x200B;</strong>&#xFF1A;</li>
+<li>3&#x6B21;0-50%&#x6CB9;&#x95E8;&#x5FAA;&#x73AF;</li>
+<li>2&#x6B21;&#x5168;&#x6CB9;&#x95E8;&#x8109;&#x51B2;&#xFF08;&#xFF1C;1&#x79D2;&#xFF09;</li>
+</ol>
+<h3 id="&#x87BA;&#x4E1D;&#x7D27;&#x56FA;&#x89C4;&#x8303;">&#x87BA;&#x4E1D;&#x7D27;&#x56FA;&#x89C4;&#x8303;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x8F74;&#x5F84;</th>
+<th>&#x87BA;&#x4E1D;&#x89C4;&#x683C;</th>
+<th>&#x626D;&#x77E9;(N&#xB7;m)</th>
+<th>&#x9632;&#x677E;&#x63AA;&#x65BD;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5mm</td>
+<td>M5&#xD7;8</td>
+<td>1.8-2.4</td>
+<td>&#x87BA;&#x7EB9;&#x80F6;262</td>
+</tr>
+<tr>
+<td>3mm</td>
+<td>M3&#xD7;6</td>
+<td>0.6-1.0</td>
+<td>&#x5F39;&#x7C27;&#x57AB;&#x5708;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x6545;&#x969C;&#x8BCA;&#x65AD;&#x624B;&#x518C;">&#x6545;&#x969C;&#x8BCA;&#x65AD;&#x624B;&#x518C;</h2>
+<h3 id="&#x5F02;&#x5E38;&#x632F;&#x52A8;&#x9891;&#x8C31;&#x5E93;">&#x5F02;&#x5E38;&#x632F;&#x52A8;&#x9891;&#x8C31;&#x5E93;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9891;&#x7387;&#x7279;&#x5F81;</th>
+<th>&#x53EF;&#x80FD;&#x539F;&#x56E0;</th>
+<th>&#x89E3;&#x51B3;&#x65B9;&#x6848;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1&#xD7;RPM</td>
+<td>&#x8F6C;&#x5B50;&#x52A8;&#x5931;&#x8861;</td>
+<td>&#x91CD;&#x65B0;&#x914D;&#x5E73;</td>
+</tr>
+<tr>
+<td>2&#xD7;&#x6868;&#x53F6;&#x6570;&#xD7;RPM</td>
+<td>&#x6868;&#x53F6;&#x4E0D;&#x5BF9;&#x79F0;</td>
+<td>&#x66F4;&#x6362;&#x87BA;&#x65CB;&#x6868;</td>
+</tr>
+<tr>
+<td>100-400Hz</td>
+<td>&#x8F74;&#x627F;&#x635F;&#x4F24;</td>
+<td>&#x66F4;&#x6362;&#x8F74;&#x627F;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x7535;&#x673A;&#x9000;&#x78C1;&#x68C0;&#x6D4B;">&#x7535;&#x673A;&#x9000;&#x78C1;&#x68C0;&#x6D4B;</h3>
+<ol>
+<li>&#x7A7A;&#x8F7D;&#x7535;&#x6D41;&#x4E0A;&#x5347;&#xFF1E;15%</li>
+<li>KV&#x503C;&#x4E0B;&#x964D;&#xFF1E;8%</li>
+<li>&#x53CD;&#x7535;&#x52A8;&#x52BF;&#x6CE2;&#x5F62;&#x7578;&#x53D8;</li>
+</ol>
+<h2 id="&#x7ADE;&#x901F;&#x7EA7;&#x8C03;&#x6821;&#x65B9;&#x6848;">&#x7ADE;&#x901F;&#x7EA7;&#x8C03;&#x6821;&#x65B9;&#x6848;</h2>
+<h3 id="&#x4E16;&#x754C;&#x51A0;&#x519B;&#x914D;&#x7F6E;">&#x4E16;&#x754C;&#x51A0;&#x519B;&#x914D;&#x7F6E;</h3>
+<ul>
+<li>&#x7535;&#x673A;&#x200B;&#xFF1A;T-Motor F60 Pro&#xFF08;&#x6539;&#x7ED5;&#xFF09;<ul>
+<li>&#x5355;&#x80A1;0.3mm&#x6F06;&#x5305;&#x7EBF;</li>
+<li>&#x94F6;&#x94AF;&#x710A;&#x70B9;&#x5904;&#x7406;</li>
+</ul>
+</li>
+<li>&#x200B;&#x87BA;&#x65CB;&#x6868;&#x200B;&#xFF1A;HQ 5x4.3x3&#xFF08;&#x624B;&#x5DE5;&#x4FEE;&#x5F62;&#xFF09;<ul>
+<li>&#x524D;&#x7F18;&#x7EB3;&#x7C73;&#x6D82;&#x5C42;</li>
+<li>&#x8D28;&#x91CF;&#x516C;&#x5DEE;&#xFF1C;0.01g</li>
+</ul>
+</li>
+<li>&#x200B;&#x6027;&#x80FD;&#x53C2;&#x6570;&#x200B;&#xFF1A;<ul>
+<li>&#x77AC;&#x65F6;&#x63A8;&#x529B;&#xFF1A;3400g</li>
+<li>0-100kph&#x52A0;&#x901F;&#xFF1A;1.2&#x79D2;</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x9009;&#x578B;&#x51B3;&#x7B56;&#x6811;">&#x9009;&#x578B;&#x51B3;&#x7B56;&#x6811;</h2>
+<div class="mermaid">
+graph TD
+    A[&#x9700;&#x6C42;&#x5206;&#x6790;] --&gt; B{&#x673A;&#x578B;}
+    B --&gt;|&#x7ADE;&#x901F;| C[&#x63A8;&#x529B;&#xFF1E;2500g]
+    B --&gt;|&#x822A;&#x62CD;| D[&#x6548;&#x7387;&#xFF1E;6g/W]
+    C --&gt; E{&#x7535;&#x6C60;}
+    E --&gt;|6S| F[2207-2450KV]
+    E --&gt;|4S| G[2306-2750KV]
+    D --&gt; H{&#x6868;&#x53F6;}
+    H --&gt;|5&#x5BF8;| I[&#x4E09;&#x53F6;&#x9AD8;&#x87BA;&#x8DDD;]
+    H --&gt;|7&#x5BF8;| J[&#x53CC;&#x53F6;&#x4F4E;&#x87BA;&#x8DDD;]
+</div>
+
+<p><a href="vtx.html">&#x27A1;&#xFE0F; &#x4E0B;&#x4E00;&#x7BC7;&#xFF1A;&#x56FE;&#x4F20;&#x7CFB;&#x7EDF;</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="receiver.html" class="navigation navigation-prev " aria-label="Previous page: 接收机选择">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vtx.html" class="navigation navigation-next " aria-label="Next page: 图传系统">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"电机与螺旋桨选择","level":"1.2.5","depth":2,"next":{"title":"图传系统","level":"1.2.6","depth":2,"path":"hardware/vtx.md","ref":"hardware/vtx.md","articles":[]},"previous":{"title":"接收机选择","level":"1.2.4","depth":2,"path":"hardware/receiver.md","ref":"hardware/receiver.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search-plus","code","splitter","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{"theme":"default"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"Your Name","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FPV 全指南","language":"zh-hans","gitbook":"*"},"file":{"path":"hardware/motors.md","mtime":"2025-05-19T06:23:06.545Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-05-19T08:34:38.589Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

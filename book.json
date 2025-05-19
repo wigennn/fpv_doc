@@ -1,0 +1,15 @@
+{
+    "title": "FPV 全指南",
+    "author": "Your Name",
+    "language": "zh-hans",
+    "plugins": ["search-plus", "code", "splitter", "mermaid-gb3"],
+    "pluginsConfig": {
+        "code": { "copyButtons": true },
+        "mermaid-gb3": {
+            "theme": "default"
+        }
+    },
+    "styles": {
+        "website": "styles/website.css"
+    }
+}

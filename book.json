@@ -2,11 +2,37 @@
     "title": "FPV 全指南",
     "author": "Your Name",
     "language": "zh-hans",
-    "plugins": ["search-plus", "code", "splitter", "mermaid-gb3"],
+    "plugins": ["search-plus", "code", "splitter", "mermaid-gb3", "expandable-chapters", "chapter-fold"],
     "pluginsConfig": {
         "code": { "copyButtons": true },
+        "anchor-navigation-ex": { "showLevel": true },
+        "search-plus": {
+            "search": {
+                "index": ["title", "content"],
+                "indexPath": ["title", "content"]
+            }
+        },
+        "splitter": {
+            "default": {
+                "left": 0.2,
+                "right": 0.8
+            }
+        },
+        "expandable-chapters": {
+            "expand": true,
+            "collapse": false
+        },
+        "chapter-fold": {
+            "autoFold": true,
+            "autoFoldDepth": 2
+        },
         "mermaid-gb3": {
-            "theme": "default"
+            "securityLevel": "loose"
+        },
+        "sharing": {
+            "weibo": true,
+            "qq": true,
+            "all": ["qq", "weibo", "twitter"]
         }
     },
     "styles": {

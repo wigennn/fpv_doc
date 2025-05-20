@@ -15,6 +15,7 @@
 ## 定位技术深度解析
 ### 多频段信号处理
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '12px' }}}%%
 graph TD
     A[L1信号 1575.42MHz] --> B[载波相位测量]
     A --> C[C/A码伪距]
@@ -99,6 +100,7 @@ plt.title("卫星信噪比分布")
 ## 高精度定位方案
 ### RTK系统配置
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '12px' }}}%%
 graph LR
     A[基准站] -->|RTCM3.2| B[数传电台]
     B --> C[移动站]
@@ -119,6 +121,7 @@ graph LR
 ---
 ## 选型决策树
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '12px' }}}%%
 graph TD
     A[应用需求] --> B{精度要求}
     B -->|厘米级| C[RTK/PPK方案]

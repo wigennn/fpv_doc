@@ -48,6 +48,7 @@ print(f"推力估算: {motor_prop_match(2450, 16.8, 4.3):.0f}g")  # 输出：278
 
 ### 散热系统设计
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[转子风叶] --> B[强制对流]
     C[定子绕组] --> D[导热环氧]
@@ -115,6 +116,7 @@ const int motor_order[4] = {CW, CCW, CCW, CW};  // 标准X型布局
 
 ## 选型决策树
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[需求分析] --> B{机型}
     B -->|竞速| C[推力＞2500g]

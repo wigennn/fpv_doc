@@ -37,6 +37,7 @@ plt.show()
 ## 电化学特性
 ### 电池内部分层结构
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[正极铝箔] --> B[LiCoO2涂层]
     C[负极铜箔] --> D[石墨涂层]
@@ -83,6 +84,7 @@ graph TD
 ## 低温性能优化
 ### 加热系统设计
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph LR
     A[温控芯片] --> B[PTC加热片]
     B --> C[保温层]
@@ -99,8 +101,10 @@ graph LR
 | -20     | 30%      | 禁止使用 | 50%        |  
 
 --- 
+
 ## 选型决策树
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[需求分析] --> B{应用场景}
     B -->|竞速| C[高C数＞100]

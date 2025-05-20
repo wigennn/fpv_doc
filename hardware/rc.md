@@ -15,6 +15,7 @@
 ## 射频系统架构
 ### 信号传输拓扑
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[摇杆传感器] --> B[ADC采样]
     B --> C[协议编码器]
@@ -36,7 +37,9 @@ struct CrsfFrame {
     uint8_t crc;
 };
 ```
+
 --- 
+
 ## 核心技术解析
 ### 摇杆传感技术
 | 类型       | 分辨率(bit) | 寿命(万次) | 温漂(‰/℃) | 典型型号       |  
@@ -46,6 +49,7 @@ struct CrsfFrame {
 | 磁编码器   | 16          | 无限       | 0.1        | AS5600         |  
 
 --- 
+
 ## 硬件架构设计
 ### 主控系统组成
 ```c
@@ -65,6 +69,7 @@ struct RadioHardware {
 | 螺旋极化   | 5.2       | 120°     | 绕障竞速       |  
 
 --- 
+
 ## 调试与校准规范
 ### 摇杆校准流程
 1. **机械校准​**：
@@ -77,11 +82,13 @@ def calibrate_stick(raw_min, raw_max):
     scale = 1000.0 / (raw_max - midpoint)
     return midpoint, scale
 ```
+
 3. **​动态测试​**：
     - 绘制Lissajous图形验证线性度
 
 ### 功率调整策略
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[环境扫描] --> B{信号强度}
     B -->|＜-90dBm| C[提升至100%功率]
@@ -91,6 +98,7 @@ graph TD
 ```
 
 --- 
+
 ## 故障排查手册
 ### 信号问题诊断
 | 现象       | 可能原因       | 解决方案         |  
@@ -112,6 +120,7 @@ plt.ylabel("Noise Floor (dBm)")
 ```
 
 --- 
+
 ## 竞赛级优化方案
 ### 世界冠军配置
 - 遥控器​：TBS Tango 2（改装版）
@@ -123,8 +132,10 @@ plt.ylabel("Noise Floor (dBm)")
     - 有效距离：15km
     - 摇杆分辨率：0.05°
 
+
 ## 选型决策树
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[预算] --> B{＞$300}
     B -->|是| C[全协议支持]

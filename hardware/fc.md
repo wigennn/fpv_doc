@@ -15,6 +15,7 @@
 ## 硬件架构剖析
 ### 飞控核心模块拓扑
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[传感器] --> B[MCU]
     B --> C[PID控制器]
@@ -62,6 +63,7 @@ def calculate_pid(bandwidth, phase_margin):
 
 print(calculate_pid(120, 45))  # 输出：(96.0, 48.0, 19.2)
 ```
+
 ### 滤波器配置方案
 | 噪声类型       | 滤波器类型   | 截止频率      | 适用场景             |
 |----------------|--------------|---------------|----------------------|
@@ -72,6 +74,7 @@ print(calculate_pid(120, 45))  # 输出：(96.0, 48.0, 19.2)
 ## 高级功能开发
 ### 双冗余设计
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 sequenceDiagram
     主MCU->>备MCU: 心跳信号
     alt 主MCU正常
@@ -80,6 +83,7 @@ sequenceDiagram
         备MCU->>电调: 接管控制
     end
 ```
+
 ### 故障安全策略
 1. **三级故障响应​**：
 - Level1：自动平衡
@@ -114,7 +118,6 @@ plt.title('陀螺仪滤波效果分析')
 ```
 
 ## 选型决策树
-
 ```mermaid
 graph TD
     A[需求分析] --> B{机型?}
@@ -127,4 +130,5 @@ graph TD
     H -->|自主航线| I[iNav固件]
     H -->|专业测绘| J[ArduPilot]
 ``` 
+
 [➡️ 下一篇：接收机选型指南](./receiver.md)

@@ -7,6 +7,7 @@
 ## 系统拓扑架构
 
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph LR
     A[地面端] -->|无线电波| B[接收机]
     B --> C[飞控]
@@ -54,6 +55,7 @@ graph LR
 
 ### 兼容性速查
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph LR
     A[飞控协议] -->|SBUS/PPM| B[接收机]
     C[电调协议] -->|DShot300| D[飞控]

@@ -8,6 +8,7 @@
 
 ### 按应用场景分类
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[无人机机架] --> B[竞速型]
     A --> C[航拍型]
@@ -101,6 +102,7 @@ float motor_angle = atan2(arm_length, COG_height);
 ## 故障排查宝典
 ### 振动问题分析
 ```mermaid 
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph LR
     A[异常振动] --> B{频率分析}
     B -->|100-200Hz| C[电机失衡]
@@ -118,6 +120,7 @@ graph LR
 
 ## 机型决策树
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[需求分析] --> B{用途?}
     B -->|竞速| C[轴距＜22cm]

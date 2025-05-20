@@ -21,6 +21,7 @@ $$ PPD = \frac{\sqrt{H_{res}^2 + V_{res}^2}}{FOV_{diag}} } $$
 
 ### 光学路径设计
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph LR
     A[接收模块] --> B[视频解码]
     B --> C[图像增强]
@@ -103,6 +104,7 @@ print(f"镜片间距: {adjust_ipd(63)}mm")  # 输出：镜片间距: 66.4mm
 
 ## 选型决策树
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[预算范围] --> B{＞$500}
     B -->|是| C[数字图传系统]

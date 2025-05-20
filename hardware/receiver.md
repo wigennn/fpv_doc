@@ -15,6 +15,7 @@
 ## 通信协议深度解析
 ### 协议性能指标
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph LR
     A[协议类型] --> B{延迟优先级}
     B -->|竞速场景| C[ELRS/CRSF]
@@ -35,6 +36,7 @@ graph LR
 ## 硬件架构剖析
 ### 接收机电路拓扑
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[天线阵列] --> B[RF前端]
     B --> C[基带处理器]
@@ -46,9 +48,9 @@ graph TD
 
 ### 灵敏度增强技术
 1. ​LNA设计​：使用NXP BFU730F低噪声放大器（NF=0.8dB）
-​2. 分集接收​：双天线相位合成技术
-​3. 自适应滤波​：Kalman滤波消除多径干扰
-​4. 功率控制​：动态调整发射功率（0-100mW）
+2. 分集接收​：双天线相位合成技术
+3. 自适应滤波​：Kalman滤波消除多径干扰
+4. 功率控制​：动态调整发射功率（0-100mW）
 
 ## 安装与调试规范
 ### 天线部署黄金法则
@@ -68,9 +70,11 @@ def rssi_to_percent(rssi, max_rssi=-40, min_rssi=-120):
 
 print(f"信号强度: {rssi_to_percent(-85)}%")  # 输出：信号强度: 54.5%
 ```
+
 ## 故障排查手册
 ### 典型故障树
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[无信号] --> B{对频状态}
     B -->|失败| C[检查协议匹配]
@@ -96,6 +100,7 @@ rate = 500Hz
 switch_delay = 0
 telem_ratio = 1:128
 ```
+
 2. **硬件改造​**：
 - 移除LED指示灯电路
 - 改用0402封装元件
@@ -109,6 +114,7 @@ telem_ratio = 1:128
 
 ### 选型决策树
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[应用场景] --> B{需求优先级}
     B -->|低延迟| C[ELRS/CRSF]

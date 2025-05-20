@@ -15,6 +15,7 @@
 ## 信号传输原理
 ### 视频链路拓扑
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[摄像头] --> B[图传编码器]
     B --> C[RF调制器]
@@ -26,6 +27,7 @@ graph TD
 ```
 
 --- 
+
 ## 硬件架构解析
 ### 数字图传核心模块
 ```c
@@ -37,6 +39,7 @@ struct DigitalVTX {
     float frequency;      // 工作频率
 };
 ```
+
 ### 模拟图传性能优化
 1. 信号增强技术​：
     - 预加重电路（提升高频分量）
@@ -49,6 +52,7 @@ struct DigitalVTX {
     - 温度补偿电路
 
 --- 
+
 ## 频段与信道管理
 ### 5.8GHz信道分布
 
@@ -67,6 +71,7 @@ print(channel_selector("race"))  # 自动选择最低干扰信道
 
 ## 选型决策树
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '7px' }}}%%
 graph TD
     A[应用场景] --> B{需求优先级}
     B -->|低延迟| C[数字图传]
